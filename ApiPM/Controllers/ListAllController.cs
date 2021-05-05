@@ -14,7 +14,7 @@ namespace ApiPM.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            List<string> files = Directory.GetFiles(@"D:\Files").ToList();
+            List<string> files = Directory.GetFiles(@"C:\Files").ToList();
             List<string> fNames = new List<string>();
             foreach (string file in files)
             {
